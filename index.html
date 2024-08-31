@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#precios">PRECIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#login">LOG-IN</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <!-- Slider -->
+        <section id="inicio" class="slider">
+            <div class="slides">
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDA1NjR8MHwxfGFsbHwxfHx8fHx8fHwxNjE5NjM3Nzgz&ixlib=rb-1.2.1&q=80&w=1920&h=600');">
+            <a href="#" class="slider-button">Diseño Gráfico</a>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522205408450-add114ad53fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDA1NjR8MHwxfGFsbHwzfHx8fHx8fHwxNjE5NjM3ODc2&ixlib=rb-1.2.1&q=80&w=1920&h=600');">
+            <a href="#" class="slider-button">Diseño de Páginas Web</a>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDA1NjR8MHwxfGFsbHw0fHx8fHx8fHwxNjE5NjM3ODk1&ixlib=rb-1.2.1&q=80&w=1920&h=600');">
+            <a href="#" class="slider-button">Creación de Apps Móviles</a>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDA1NjR8MHwxfGFsbHw1fHx8fHx8fHwxNjE5NjM3OTMw&ixlib=rb-1.2.1&q=80&w=1920&h=600');">
+            <a href="#" class="slider-button">Marketing Digital</a>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+
+        <!-- Sección de Productos Importantes -->
+        <section id="productos" class="productos">
+            <h2>Productos Destacados</h2>
+            <div class="product-card">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto 1.</p>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+            <div class="product-card">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción breve del producto 2.</p>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+            <div class="product-card">
+                <img src="producto3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Descripción breve del producto 3.</p>
+                <a href="#" class="btn">Comprar</a>
+            </div>
+        </section>
+
+        <!-- Sección de Precios -->
+        <section id="precios" class="precios">
+            <h2 class="precios-title">Planes de Suscripción</h2>
+            <div class="plan-container">
+                <div class="plan-card">
+                    <h3>BÁSICO</h3>
+                    <p>Acceso limitado a productos.</p>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">19</span><span class="period">/mes</span>
+                    </div>
+                    <a href="#" class="btn">Adquirir</a>
+                </div>
+                <div class="plan-card popular">
+                    <h3>PREMIUM</h3>
+                    <p>Acceso ilimitado a todos los productos.</p>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">49</span><span class="period">/mes</span>
+                    </div>
+                    <a href="#" class="btn">Adquirir</a>
+                </div>
+                <div class="plan-card">
+                    <h3>EMPRESARIAL</h3>
+                    <p>Soporte y acceso exclusivo.</p>
+                    <div class="price">
+                        <span class="currency">$</span><span class="amount">99</span><span class="period">/mes</span>
+                    </div>
+                    <a href="#" class="btn">Adquirir</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="nosotros" class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>En [Nombre de la Empresa], impulsamos la innovación para transformar tu vida. Nos especializamos en ofrecer soluciones únicas y efectivas, diseñadas para superar expectativas y adaptarse a un mundo en constante cambio. Con un equipo apasionado y comprometido, estamos aquí para marcar la diferencia. Descubre cómo podemos llevarte al siguiente nivel.
+            </p>
+        </section>
+
+            <!-- Sección de Empleados -->
+    <section id="equipo" class="equipo">
+    <h2>Conoce a nuestro equipo</h2>
+    <div class="empleados-slider">
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 1" class="empleado-img">
+            <h3>Empleado 1</h3>
+            <p>Especialista en marketing.</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 2" class="empleado-img">
+            <h3>Empleado 2</h3>
+            <p>Desarrollador web.</p>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 3" class="empleado-img">
+            <h3>Empleado 3</h3>
+            <p>Diseñador gráfico.</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 4" class="empleado-img">
+            <h3>Empleado 4</h3>
+            <p>Gerente de producto.</p>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 5" class="empleado-img">
+            <h3>Empleado 5</h3>
+            <p>Especialista en ventas.</p>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 6" class="empleado-img">
+            <h3>Empleado 6</h3>
+            <p>Analista de datos.</p>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="empleado-card">
+            <img src="https://cdn-icons-png.freepik.com/512/7718/7718888.png" alt="Empleado 7" class="empleado-img">
+            <h3>Empleado 7</h3>
+            <p>Coordinador de proyectos.</p>
+            <div class="rating">★★★★★</div>
+        </div>
+    </div>
+    </section>
+
+
+            <!-- Sección de Marcas -->
+    <section id="marcas" class="marcas">
+    <h2>Trabajamos con las Marcas</h2>
+    <div class="marcas-slider">
+        <div class="marca">
+            <a href="https://www.marca1.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 1">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca2.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 2">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca3.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 3">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca4.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 4">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca5.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 5">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca6.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 6">
+            </a>
+        </div>
+        <div class="marca">
+            <a href="https://www.marca7.com" target="_blank">
+                <img src="img/ERlogo.png" alt="Marca 7">
+            </a>
+        </div>
+    </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Tu Empresa</h3>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#precios">Precios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#login">Log-In</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+    <script>
+        const marcasSlider = document.querySelector('.marcas-slider');
+        marcasSlider.innerHTML += marcasSlider.innerHTML; // Duplicar contenido para scroll infinito
+    
+        let isHovering = false;
+    
+        marcasSlider.addEventListener('mouseover', () => {
+            isHovering = true;
+        });
+    
+        marcasSlider.addEventListener('mouseout', () => {
+            isHovering = false;
+        });
+    
+        function animateSlider() {
+            if (!isHovering) {
+                marcasSlider.scrollLeft += 1;
+                if (marcasSlider.scrollLeft >= marcasSlider.scrollWidth / 2) {
+                    marcasSlider.scrollLeft = 0;
+                }
+            }
+            requestAnimationFrame(animateSlider);
+        }
+    
+        animateSlider();
+    </script>
+    <script>
+                let currentSlide = 0;
+        let slideInterval;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(() => {
+                moveSlide(1);
+            }, 3000); // Cambia de imagen automáticamente cada 5 segundos
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            moveSlide(-1);
+            stopSlideShow();
+            startSlideShow();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            moveSlide(1);
+            stopSlideShow();
+            startSlideShow();
+        });
+
+        // Inicia el slider automático
+        startSlideShow();
+
+    </script>
+</body>
+</html>
